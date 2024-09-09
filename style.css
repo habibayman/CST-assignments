@@ -1,0 +1,44 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("https://i.pinimg.com/564x/cc/18/6c/cc186c2a914743cde0d0419d936a737a.jpg");
+  background-size: cover;
+}
+
+h3 {
+  color: #b21569;
+  font-size: 3rem;
+  font-family: "Oxygen mono", monospace;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+ul {
+  padding: 0;
+  text-align: center;
+  background-color: rgba(246, 243, 239, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  width: 400px;
+  box-shadow: inset;
+}
+
+li {
+  font-family: Oxygen, sans-serif;
+  padding: 1rem;
+  position: relative;
+  list-style: none;
+  font-size: 1rem;
+}
+
+a {
+  /* color: #6a85cd; */
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #9d8992;
+  font-size: 2rem;
+}
