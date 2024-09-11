@@ -1,32 +1,54 @@
 body {
-    font-family: Poppins;
-    font-size: 24px;
+  font-family: Poppins;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Navbar */
 
 .navbar {
-    background-color:darkgrey;
-    padding: 20px;
+  background-color: darkgrey;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 4.5rem;
 
-    display: block; /* TODO : change to flex and make it wrap  */
-    justify-content: space-between;
-    align-items: center;
-    
-    /* TODO : make its position sticky ( Hint : you have to set top: 0 ) */
+  display: flex; /* TODO : change to flex and make it wrap  */
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  /* TODO : make its position sticky ( Hint : you have to set top: 0 ) */
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+#logo img {
+  transform: rotate(360deg);
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* add post button */
 
-.add-post{
-    background-color: rgba(73, 253, 91, 0.8);
-    color: white;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 1rem ;
-    font-size: 16px;
-    text-align: center;
-    margin: 0 2rem;
-    cursor: pointer;
-    border-radius: 1rem;
+.add-post {
+  background-color: rgba(73, 253, 91, 0.8);
+  color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  font-size: 16px;
+  text-align: center;
+  margin: 0 5rem;
+  cursor: pointer;
+  border-radius: 1rem;
 }
