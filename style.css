@@ -1,14 +1,15 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  background-image: url("https://i.pinimg.com/564x/cc/18/6c/cc186c2a914743cde0d0419d936a737a.jpg");
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('https://i.pinimg.com/564x/cc/18/6c/cc186c2a914743cde0d0419d936a737a.jpg');
   background-size: cover;
 }
 
-h3 {
+h1 {
   color: #b21569;
-  font-size: 3rem;
-  font-family: "Oxygen mono", monospace;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  font-family: 'Oxygen mono', monospace;
+  text-shadow: 2px 2px 4px rgba(24, 24, 24, 0.5);
+  margin: auto;
   margin-top: 6rem;
   margin-bottom: 3rem;
 }
@@ -40,5 +41,5 @@ a {
 
 a:hover {
   color: #9d8992;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
