@@ -4,7 +4,7 @@ import axios from 'axios';
 const Navbar = ({ posts, setPosts }) => {
   const addPost = async () => {
     const new_post = {
-      id: posts.length + 1 + Math.trunc(Math.random() * 200 + 1), // the API uses elem index as its id ==> adding only 1 will lead to id duplications
+      id: posts.length + 1, // the API uses elem index as its id ==> adding only 1 will lead to id duplications
       title: 'New Post',
       body: 'New Post Body',
     };
@@ -13,7 +13,6 @@ const Navbar = ({ posts, setPosts }) => {
         .post('https://jsonplaceholder.typicode.com/posts', new_post)
         .then(() => {
           setPosts([new_post, ...posts]);
-          // console.log('response ==========> ', response); /// DEBUG
         });
     } catch (error) {
       console.log(error);

@@ -32,7 +32,6 @@
 
 .grid-item:nth-child(even) {
   background-color: #98a9b5;
-
   color: black;
 }
 
