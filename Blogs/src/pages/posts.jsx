@@ -21,7 +21,7 @@ const Posts = () => {
       }
     };
     getPosts();
-  }, []);
+  }, []);  
 
   const deletePost = async (id) => {
     if (
@@ -41,7 +41,6 @@ const Posts = () => {
   if (error) return <div>failed to load</div>; // when there is an error in fetching data from api, it will show failed to load
   if (!posts) return <div>loading...</div>; // when data is being fetched from api, it will show loading...
 
-  console.log('posts ======> ', posts); // DEBUG
   return (
     <div>
       <Navbar posts={posts} setPosts={setPosts} />
