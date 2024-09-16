@@ -41,8 +41,8 @@ class FolderMonitor {
   writeHistory() {
     fsPromises
       .writeFile('changeLog.txt', this.changeHistory.join('\n'))
-      .catch((err) => {
-        console.log(err);
+      .catch((error) => {
+        console.log(error);
       });
   }
 }
